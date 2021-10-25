@@ -20,18 +20,64 @@ public class Main {
         if (task.equals("бага")) {
             System.out.println("Это не бага, это фича");
         }
-
-        if (task.equals("фича")) {
+        else if (task.equals("фича")) {
             System.out.println("Это не фича, это бага");
         }
+        else {
+            System.out.println("Это не фича и не бага");
+        }
 
-        /**
-         * Задание на циклические операторы
-         */
+        System.out.println();
+
+        String task1 = new BufferedReader(new InputStreamReader(System.in)).readLine();
+
+        switch (task1) {
+            case "бага":
+                System.out.println("Это не бага, это фича");
+                break;
+            case "фича":
+                System.out.println("Это не фича, это бага");
+                break;
+            default:
+                System.out.println("Это не фича и не бага!");
+
+        }
+
+        System.out.println();
 
         //1. Написать цикл while, который будет выводить числа от 1 до 10
+
+        int i = 1;
+
+        while (i <= 10) {
+        System.out.println(i);
+        i++;
+            }
+        System.out.println();
         //2. Написать цикл while, который будет выводить числа от 10 до 1
+        int i1 = 10;
+        while (i1 > 0) {
+            System.out.println(i1);
+            i1--;
+        }
+        System.out.println();
         //3. Написать цикл while, который будет выводить только четные числа от 1 до 10, т.е. 2,4,6,8
+
+        int i2 = 1;
+        while (i2 < 11) {     // если 10 включительно, если нет то (i2 < 10)
+            if (i2 % 2 == 0)
+                System.out.println(i2);
+            i2++;
+            }
+        System.out.println();
+
         //4. Написать цикл while, который будет выводить только нечетные числа от 1 до 10, т.е. 1,3,5,7,9
+        int i3 = 1;
+        while (i3 < 11) {
+            if (i3 % 2 != 0)
+                System.out.println(i3);
+            i3++;
+        }
+
     }
 }
