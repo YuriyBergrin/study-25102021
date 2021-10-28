@@ -48,7 +48,7 @@ public class Main {
         int i = 1;
 
         while (i <= 10) {
-            System.out.println(i++);
+            System.out.println(i++);//todo Можно сократить запись, поместив i в метод println
 //        i++;
         }
         System.out.println();
