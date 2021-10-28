@@ -50,8 +50,8 @@ public class Main {
         int i = 1;
 
         while (i <= 10) {
-        System.out.println(i);
-        i++;
+        System.out.println(i++);
+//        i++;
             }
         System.out.println();
         //2. Написать цикл while, который будет выводить числа от 10 до 1
@@ -62,7 +62,7 @@ public class Main {
         }
         System.out.println();
         //3. Написать цикл while, который будет выводить только четные числа от 1 до 10, т.е. 2,4,6,8
-
+        //todo можно не использовать вложенный оператор if
         int i2 = 1;
         while (i2 < 11) {     // если 10 включительно, если нет то (i2 < 10)
             if (i2 % 2 == 0)
@@ -72,6 +72,7 @@ public class Main {
         System.out.println();
 
         //4. Написать цикл while, который будет выводить только нечетные числа от 1 до 10, т.е. 1,3,5,7,9
+        //todo можно не использовать вложенный оператор if
         int i3 = 1;
         while (i3 < 11) {
             if (i3 % 2 != 0)
