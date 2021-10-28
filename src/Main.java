@@ -19,11 +19,9 @@ public class Main {
 
         if (task.equals("бага")) {
             System.out.println("Это не бага, это фича");
-        }
-        else if (task.equals("фича")) {
+        } else if (task.equals("фича")) {
             System.out.println("Это не фича, это бага");
-        }
-        else {
+        } else {
             System.out.println("Это не фича и не бага");
         }
 
@@ -50,9 +48,9 @@ public class Main {
         int i = 1;
 
         while (i <= 10) {
-        System.out.println(i++);
+            System.out.println(i++);
 //        i++;
-            }
+        }
         System.out.println();
         //2. Написать цикл while, который будет выводить числа от 10 до 1
         int i1 = 10;
@@ -68,7 +66,7 @@ public class Main {
             if (i2 % 2 == 0)
                 System.out.println(i2);
             i2++;
-            }
+        }
         System.out.println();
 
         //4. Написать цикл while, который будет выводить только нечетные числа от 1 до 10, т.е. 1,3,5,7,9
@@ -79,6 +77,6 @@ public class Main {
                 System.out.println(i3);
             i3++;
         }
-
+        //todo Бонусное задание: задания на цикл while выполнить с опертором for
     }
 }
