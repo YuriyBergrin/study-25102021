@@ -78,5 +78,30 @@ public class Main {
             i3++;
         }
         //todo Бонусное задание: задания на цикл while выполнить с опертором for
+
+        // [1:10]
+        System.out.println();
+        for(int i4 = 1; i4 < 11; i4++) {
+            System.out.println(i4);
+        }
+
+        // [10:1]
+        System.out.println();
+        for(int i5 = 10; i5 > 0; i5--) {
+            System.out.println(i5);
+        }
+
+
+        // Четные
+        System.out.println();
+        for(int i6 = 2; i6 < 10; i6 = i6 + 2) {
+            System.out.println(i6);
+        }
+
+        // Нечетные
+        System.out.println();
+        for(int i7 = 1; i7 < 10; i7 = i7 + 2) {
+            System.out.println(i7);
+        }
     }
 }
