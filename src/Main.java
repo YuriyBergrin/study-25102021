@@ -17,26 +17,27 @@ public class Main {
 
         String task = new BufferedReader(new InputStreamReader(System.in)).readLine();//считываем текст с клавиатуры
 
- if (task.equals("бага")) {
- System.out.println("Это не бага,");
- }else {
- if (task.equals("фича")) {
- System.out.println("Это не фича,");
- }else {
- System.out.println("Не мышонок, не лягушка,");
- }}
+        if (task.equals("бага")) {
+            System.out.println("Это не бага,");
+        } else {
+            if (task.equals("фича")) {
+                System.out.println("Это не фича,");
+            } else {
+                System.out.println("Не мышонок, не лягушка,");
+            }
+        }
 
 
- switch (task){
- case "фича":
- System.out.println("это бага");
- break;
- case "бага":
- System.out.println("это фича");
- break;
- default:
- System.out.println("а неведома зверушка");
- }
+        switch (task) {
+            case "фича":
+                System.out.println("это бага");
+                break;
+            case "бага":
+                System.out.println("это фича");
+                break;
+            default:
+                System.out.println("а неведома зверушка");
+        }
 
         /**
          * Задание на циклические операторы.
@@ -59,19 +60,33 @@ public class Main {
         //3. Написать цикл while, который будет выводить только четные числа от 1 до 10, т.е. 2,4,6,8
         System.out.println("\nЦикл while, который будет выводить только четные числа от 1 до 10, т.е. 2,4,6,8");
         int x = 1;
-        while (x <= 10){
-            if (x%2==0)
-            System.out.println(x);
+        while (x <= 10) {
+            if (x % 2 == 0)
+                System.out.println(x);
             x++;
+        } //todo можно не использовать оператор if внутри цикла, например:
+
+        x = 2;
+        while (x < 10) {
+            System.out.println(x);
+            x = x + 2;
         }
 
         //4. Написать цикл while, который будет выводить только нечетные числа от 1 до 10, т.е. 1,3,5,7,9
 
         System.out.println("\nЦикл while, который будет выводить только нечетные числа от 1 до 10, т.е. 1,3,5,7,9");
         x = 1;
-        while (x <= 10){
-            if (x%2!=0)
+        while (x <= 10) {
+            if (x % 2 != 0)
                 System.out.println(x);
             x++;
+        }//todo здесь аналогично примеру выше
+
+        x = 1;
+        while (x < 10) {
+            System.out.println(x);
+            x = x + 2;
         }
-    }}
+
+    }
+}
