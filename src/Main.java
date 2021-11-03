@@ -1,36 +1,36 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import animals.Animal;
+import animals.Cat;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-        /**
-         * Задание на условные операторы.
-         */
-        //Ниже приведен код, запустите его, изучите.
-        //1. Необходимо добавить условие, при котором в консоль будет выводится сообщение о том,
-        //что введеное с клавиатуры слово не равно "фича" и не равно "бага".
-        //2. Написать аналогичную программу используя switch case.
-        //результат - 2 программы
+    public static void main(String[] args) {
+        //создаем животных
+        Cat cat1 = new Cat();
+        cat1.setName("Мурзик");
+        cat1.setAge(3);
 
-        System.out.println("Это бага или фича? Введите слово: ");//выводим в консоль текст
+        Cat cat2 = new Cat();
+        cat2.setName("Барсик");
+        cat2.setAge(-1);//обратите внимание, что тут задается отрицательное значение
+        //добавить 1-3 коровы
 
-        String task = new BufferedReader(new InputStreamReader(System.in)).readLine();//считываем текст с клавиатуры
+        //добавить 1-3 человека
 
-        if (task.equals("бага")) {
-            System.out.println("Это не бага, это фича");
+        //спрашиваем, кто они по жизни
+        animalBiography(cat1);
+        animalBiography(cat2);
+        //вызвать animalBiography для коров и людей
+    }
+
+    //автобиография животного
+    private static void animalBiography(Animal animal) {
+        System.out.println("Привет, меня зовут " + animal.getName() + ".");
+        System.out.println("Мне " + animal.getAge() + " лет.");
+        System.out.println("У меня " + animal.pawQuantity + " лапы.");//исправить ошибку в классе Animal, чтобы тут все было ок.
+        if (animal.isVegan()) {
+            System.out.println("Я хипстер.");
+        } else {
+            System.out.println("Я не веган.");
         }
-
-        if (task.equals("фича")) {
-            System.out.println("Это не фича, это бага");
-        }
-
-        /**
-         * Задание на циклические операторы.
-         */
-        //1. Написать цикл while, который будет выводить числа от 1 до 10
-        //2. Написать цикл while, который будет выводить числа от 10 до 1
-        //3. Написать цикл while, который будет выводить только четные числа от 1 до 10, т.е. 2,4,6,8
-        //4. Написать цикл while, который будет выводить только нечетные числа от 1 до 10, т.е. 1,3,5,7,9
+        System.out.println();//пустая строка для пробела между строками
     }
 }
