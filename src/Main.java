@@ -27,13 +27,13 @@ public class Main {
         Human human1 = new Human();
         human1.setName("Цой");
         human1.setAge(35);
-        human1.setVegan();
+        human1.setVegan(true);
 
 
         Human human2 = new Human();
         human2.setName("Виктор");
         human2.setAge(47);
-        human2.setVegan();
+        human2.setVegan(false);
 
 
         //спрашиваем, кто они по жизни
@@ -43,8 +43,8 @@ public class Main {
         animalBiography(cow1);
         animalBiography(cow2);
 
-        humanBiography(human1);
-        humanBiography(human2);
+        animalBiography(human1);
+        animalBiography(human2);
 
     }
 
@@ -62,15 +62,5 @@ public class Main {
         System.out.println();//пустая строка для пробела между строками
     }
 
-    private static void humanBiography(Human human) {
-        System.out.println("Привет, меня зовут " + human.getName() + ".");
-        System.out.println("Мне " + human.getAge() + " лет.");
-        if (human.setVegan()) {
-            System.out.println("Я веган");
-        } else {
-            System.out.println("Я не веган");
-        }
-        System.out.println();
 
-    }
 }
