@@ -8,7 +8,7 @@ public class Main {
         //создаем животных
         Cat cat1 = new Cat();
         cat1.setName("Мурзик");
-        cat1.setAge(3);
+        cat1.setAge(23);
 
         Cat cat2 = new Cat();
         cat2.setName("Барсик");
@@ -17,11 +17,11 @@ public class Main {
         //добавить 1-3 коровы
         Cow cow1 = new Cow();
         cow1.setName("Буренка");
-        cow1.setAge(3);
+        cow1.setAge(1);
 
         Cow cow2 = new Cow();
         cow2.setName("Быченка");
-        cow2.setAge(4);
+        cow2.setAge(20);
 
         //добавить 1-3 человека
         Human human1 = new Human();
@@ -32,7 +32,7 @@ public class Main {
 
         Human human2 = new Human();
         human2.setName("Виктор");
-        human2.setAge(47);
+        human2.setAge(105);
         human2.setVegan(false);
 
 
