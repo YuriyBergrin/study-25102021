@@ -7,7 +7,5 @@ public class Main {
         cleaner.hello();
         cleaner.doWork("Пофиксить баги");
         cleaner.rest();
-
-
     }
 }
