@@ -1,5 +1,7 @@
 import animals.Animal;
 import animals.Cat;
+import animals.Cow;
+import animals.Human;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,15 +12,34 @@ public class Main {
 
         Cat cat2 = new Cat();
         cat2.setName("Барсик");
-        cat2.setAge(-1);//обратите внимание, что тут задается отрицательное значение
+        cat2.setAge(1);//обратите внимание, что тут задается отрицательное значение
         //добавить 1-3 коровы
+        Cow cow1 = new Cow();
+        cow1.setName("Её Величесвто");
+        cow1.setAge(7);
 
+        Cow cow2 = new Cow();
+        cow2.setName("Благодать");
+        cow2.setAge(25);
         //добавить 1-3 человека
+        Human human1 = new Human();
+        human1.setName("Саша");
+        human1.setAge(-1);
+        human1.setVegan(true);
 
+        Human human2 = new Human();
+        human2.setName("Наташа");
+        human2.setAge(24);
+        human2.setVegan(false);
         //спрашиваем, кто они по жизни
         animalBiography(cat1);
         animalBiography(cat2);
         //вызвать animalBiography для коров и людей
+        animalBiography(cow1);
+        animalBiography(cow2);
+
+        animalBiography(human1);
+        animalBiography(human2);
     }
 
     //автобиография животного
