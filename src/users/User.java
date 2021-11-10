@@ -24,4 +24,5 @@ public abstract class User {
     public void setSalary(int salary) {
         this.salary = salary;
     }//задать величину зп
+
 }
