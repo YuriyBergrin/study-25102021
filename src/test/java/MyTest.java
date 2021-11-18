@@ -27,6 +27,8 @@ public class MyTest {
         int width = driver.manage().window().getSize().width;//записываем ширину в переменную width.
         Assert.assertEquals(600, width);//проверяем, что ожидаемое и реальное значения равны.
         //todo Задание написать аналогичную проверку для высоты окна
+        int height = driver.manage().window().getSize().height;
+        Assert.assertEquals(600, height);
     }
 
     @Test
@@ -37,6 +39,11 @@ public class MyTest {
         2. Записать в переменную actualTitle заголовок страницы сайта(использовать метод getTitle).
         3. Написать проверку (Assert) того, что expectedTitle и actualTitle равны.
          */
+        driver.navigate().to("https://digitalleague.ru/");
+        String actualTitle = driver.getTitle();
+        System.out.println(actualTitle);
+        Assert.assertEquals("Лига Цифровой Экономики", actualTitle);
+
     }
 
     @After
